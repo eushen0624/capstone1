@@ -1,0 +1,242 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Patua One', cursive;
+}
+
+/*Panding Page */
+/*.Landing-main{
+	background: url(../images/book.jpg);
+	background-size: cover;
+	background-position: center;
+}
+*/
+/*transparent background image*/
+.Landing-main {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+
+.Landing-main::after {
+  content: "";
+  background: url(../images/book.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+ 	background-size: cover;
+	background-position: center;
+}
+
+
+header{
+	display: flex;
+	justify-content: space-between;
+}
+
+header > div > h1, p {
+	display: flex;
+	position: relative;
+	top: 15px;
+	left: 25px;
+}
+
+header > div > h1 {
+	color: #0d80d9;
+	font-size: 40px;
+}
+
+header > div > p {
+	color: lightgray;
+	font-size: 15px;
+}
+
+header > img{
+	display: flex;
+	position: relative;
+	top: 15px;
+	right: 30px;
+	width: 45px;
+	height: 45px;
+}
+
+.Landing-page > div > button {
+	width: 150px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 0;
+	background-color:  #0d80d9;
+	margin-top: 20px;
+}
+
+.Landing-page > div > button:hover {
+	margin-top: 30px;
+	transition: 0.8s;
+	background-color: lightgray;
+	color: #0d80d9;
+
+}
+
+.Landing-page > div > h1 {
+	font-size: 50px;
+	margin-top: 10px;
+}
+
+
+.Landing-page{
+	height: 90vh;
+	display: flex;
+	justify-content: center;	
+	align-items: center;
+	color: black;
+}
+
+.Landing-page > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+nav{
+	display: flex;
+	height: 60px;
+	background-color: #3d3d3d;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+
+nav > ul {
+	display: flex;
+	list-style-type: none;
+
+}
+
+nav > ul > li {
+	margin: 0 30px;
+
+}
+
+nav > ul > li > a{
+	color: whitesmoke;
+	text-decoration: none;
+	font-size: 17px;
+
+}
+
+nav > ul > li > a:hover{
+	color: #0d80d9;
+	text-decoration: line-through;
+}
+
+/*Shop codes starts here*/
+.Shop{
+	height: 90vh;
+	background-color: whitesmoke;
+
+}
+
+.Shop > .search {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.search {
+	height: 10%;
+	padding: 40px;
+	
+}
+
+.search > form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+* input{
+	margin: 0 20px;
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: lightgray;
+	padding: 5px 10px;
+}
+
+select{
+	width: 200px;
+	height: 30px;
+	background-color: lightgray;
+	padding: 5px 10px;
+}
+
+.search-btn{
+	width: 150px;
+	padding: 5px 20px;
+	border-radius: 5px;
+	border: 0;
+	background-color:  #0d80d9;
+}
+
+.search-result{
+	height: 80%;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-result > div{
+	width: 280px;
+	height: 400px;
+	background-color: lightgray;
+	margin: 0 10px;
+}
+
+.search-result > div > img{
+	width: 150px;
+	height:210px;
+	margin-bottom: 20px;
+}
+
+.search-result > div > p {
+	font-size: 15px;
+}
+
+.search-result > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 50px;
+}
+
+/*About codes starts here*/
+.About-us{
+	height: 100vh;
+	/*background-color: #3d3d3d;*/
+	border: 1px solid green;
+	display: flex;
+
+}
+
+.About-us > div {
+	width: 50%;
+	height: 100%;
+	background-color: red;
+	border: 1px solid blue;
+}
+
+
