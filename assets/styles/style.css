@@ -2,42 +2,26 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	font-family: 'Patua One', cursive;
+	font-family: 'Varela Round', sans-serif;
+	scroll-behavior: smooth;
+	/*border: 1px solid black;*/
 }
 
-/*Panding Page */
-/*.Landing-main{
-	background: url(../images/book.jpg);
+/*anding Page */
+.Landing-main{
+	background: linear-gradient(
+		rgba(4, 15, 22, 0.65),
+		rgba(4, 15, 22, 0.65)),
+		url(../images/book.jpg);
 	background-size: cover;
 	background-position: center;
-}
-*/
-/*transparent background image*/
-.Landing-main {
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  position: relative;
-}
 
-.Landing-main::after {
-  content: "";
-  background: url(../images/book.jpg);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
- 	background-size: cover;
-	background-position: center;
 }
-
 
 header{
 	display: flex;
 	justify-content: space-between;
+	height: 15vh;
 }
 
 header > div > h1, p {
@@ -45,11 +29,13 @@ header > div > h1, p {
 	position: relative;
 	top: 15px;
 	left: 25px;
+
 }
 
 header > div > h1 {
-	color: #0d80d9;
+	color: #005E7C;
 	font-size: 40px;
+	font-weight: bolder;
 }
 
 header > div > p {
@@ -69,25 +55,30 @@ header > img{
 .Landing-page > div > button {
 	width: 150px;
 	padding: 10px 20px;
-	border-radius: 5px;
+	border-radius: 20px;
 	border: 0;
-	background-color:  #0d80d9;
+	background-color:  #d43111;
 	margin-top: 20px;
+	outline:none;
 }
 
 .Landing-page > div > button:hover {
 	margin-top: 30px;
 	transition: 0.8s;
-	background-color: lightgray;
-	color: #0d80d9;
+	background-color: #040F16;
+	color: #005E7C;
 
 }
 
 .Landing-page > div > h1 {
 	font-size: 50px;
 	margin-top: 10px;
+	color: #F6F7EB;
 }
 
+.Landing-page > div > h4 {
+	color: lightgray;
+}
 
 .Landing-page{
 	height: 90vh;
@@ -95,6 +86,7 @@ header > img{
 	justify-content: center;	
 	align-items: center;
 	color: black;
+	font-family: 'Poppins', sans-serif;
 }
 
 .Landing-page > div{
@@ -102,18 +94,51 @@ header > img{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
+	word-spacing: 
 }
 
 
 nav{
 	display: flex;
-	height: 60px;
-	background-color: #3d3d3d;
-	justify-content: center;
+	height: 70px;
+	background-color: #040F16;
+	justify-content: space-between;
 	align-items: center;
 	position: sticky;
 	top: 0;
+	padding: 0 10px;
+	z-index: 100;
+}
+
+nav > div > h1, p {
+	position: relative;
+	top: 15px;
+	left: 25px;
+}
+
+nav > div > h1 {
+	color: #005E7C;
+	font-size: 35px;
+	font-weight: bolder;
+	position: relative;
+	left: 15px;
+}
+ 
+nav > div > p{
+	color: lightgray;
+	font-size: 12px;
+	position: relative;
+	left: 0px;
+	top: 10px;
+}
+
+nav > div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	bottom: 15px;
+
 }
 
 nav > ul {
@@ -123,14 +148,15 @@ nav > ul {
 }
 
 nav > ul > li {
-	margin: 0 30px;
-
+	margin: 0 15px;
+	position: relative;
+	right: 10px;
 }
 
 nav > ul > li > a{
 	color: whitesmoke;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 15px;
 
 }
 
@@ -150,13 +176,11 @@ nav > ul > li > a:hover{
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	height: 10%;
+
 }
 
-.search {
-	height: 10%;
-	padding: 40px;
-	
-}
+
 
 .search > form {
 	display: flex;
@@ -164,8 +188,6 @@ nav > ul > li > a:hover{
 	align-items: center;
 
 }
-
-
 
 * input{
 	margin: 0 20px;
@@ -185,58 +207,136 @@ select{
 
 .search-btn{
 	width: 150px;
-	padding: 5px 20px;
-	border-radius: 5px;
+	padding: 10px 20px;
+	border-radius: 20px;
 	border: 0;
 	background-color:  #0d80d9;
+	outline:none;
 }
 
 .search-result{
-	height: 80%;
-	width: 100vw;
+	height: 90%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	padding-top: 10px;
+
 }
+
 .search-result > div{
-	width: 280px;
-	height: 400px;
-	background-color: lightgray;
-	margin: 0 10px;
-}
-
-.search-result > div > img{
-	width: 150px;
-	height:210px;
-	margin-bottom: 20px;
-}
-
-.search-result > div > p {
-	font-size: 15px;
-}
-
-.search-result > div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	width: 80%;
+	display:flex;
 	align-items: center;
-	padding: 0 50px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
+
+.search-result > div > div{
+	width: 200px;
+	height: 240px;
+	background-color: lightgray;
+	margin: 10px 10px;
+	float: left;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 5px;
+	position: relative;
+
+}
+
+.search-result > div > div > img{
+	width: 70px;
+	height:100px;
+	margin: 20px;
+	box-shadow: 2px 2px 20px black;
+
+}
+
+
+.search-result > div > div div > button {
+	height: 17px;
+	width: 55px;
+	border-radius: 20px;
+	border: 0;
+	font-size: 11px;
+	outline:none;
+}
+
+.search-result > div > div div > .sr-detail {
+	background-color: #005E7C;
+}
+
+.search-result > div > div div > .sr-buy {
+	background-color: #d43111;
+}
+
+.search-result > div > div:hover{
+	transform: scale(1.1);	
+	/*box-shadow: 2px 2px 20px black;*/
+	background-color: gray;
+	z-index: 3;
+	transition: .7s;
+}
+.search-result > div > div:hover , .search-result > div > div div > button:hover{
+	color: whitesmoke;
+	transition: .5s;
+}
+
 
 /*About codes starts here*/
-.About-us{
-	height: 100vh;
-	/*background-color: #3d3d3d;*/
-	border: 1px solid green;
+.Best-seller {
+	height: 90vh;
+	background-color: #005E7C;
 	display: flex;
 
+	
 }
 
-.About-us > div {
-	width: 50%;
+.Best-seller > div {
+	width: 33.3%;
 	height: 100%;
-	background-color: red;
-	border: 1px solid blue;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.Best-seller > .bs-caption{
+	flex-direction: column;
+	color: black;
+	position: relative;
+	bottom: 30px;
+}
+
+.Best-seller > .bs-cover > img, .Best-seller > .bs-delia > img{
+	width: 370px;
+	height: 470px;
 }
 
 
+.{
+
+}
+/*Contact codes starts here*/
+
+.Contact{
+	height: 90vh;
+	background-color: whitesmoke;
+
+}
+
+
+
+
+
+/*Responsiveness starts here*/
+
+@media screen and (max-width: 375px){
+
+	header > div > h1 {
+
+		font-size: 200px;
+	}
+}
+
+/*ipad - min-width 376px*/

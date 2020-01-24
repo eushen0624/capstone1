@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- title -->
 	<title>BookMark - Capstone 1</title>
+	<link rel="icon" type="image/png" href="assets/images/book.png">
+	
 	<!-- css link -->
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Varela+Round&display=swap" rel="stylesheet">
+
+	<meta name="vieport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="Landing-main">
@@ -19,12 +24,16 @@
 		<section class="Landing-page">
 			<div>
 				<h4>Looking for new reads?</h4>
-				<h1>Let's awaken the bookorm in you. </h1>
+				<h1>Let's awaken the bookworm in you. </h1>
 				<button>View more</button>
 			</div>
 		</section>
 	</div>
 	<nav>
+		<div>
+			<h1>BookMark</h1>
+			<p>Your favorite bookshop.</p>
+		</div>
 		<ul>
 			<li><a href="">Home</a></li>
 			<li><a href="">Shop</a></li>
@@ -44,66 +53,95 @@
 					<option>Non-fiction</option>
 					<option>Scifi</option>
 					<option>Thriller</option>
-				</select>
+				</select>	
 				<input type="text" name="author" class="author" placeholder="Author">
 				<button name="search" class="search-btn">Search</button>
 			</form>
 		</div>
 		<div class="search-result">
-
 			<div>
-				<img src="assets/images/search-images/jk1.jpg" class="book-img" >
-				<h5>Harry Potter and the Philosopher's stone</h5>
-				<p>P800</p>
-			</div>
-			<div>
-				<img src="assets/images/search-images/jk2.jpg" class="book-img" >
-				<h5>Harry Potter and the Philosopher's stone</h5>
-				<p>P800</p>
-			</div>
-			<div>
-				<img src="assets/images/search-images/jk3.jpg" class="book-img" >
-				<h5>Harry Potter and the Philosopher's stone</h5>
-				<p>P800</p>
-			</div>
-			<div>
-				<img src="assets/images/search-images/jk4.jpg" class="book-img" >
-				<h5>Harry Potter and the Philosopher's stone</h5>
-				<p>P800</p>
-			</div>
-			<div>
-				<img src="assets/images/search-images/jk1.jpg" class="book-img" >
-				<h5>Harry Potter and the Philosopher's stone</h5>
-				<p>P800</p>
-			</div>
-			<div>
-				<img src="assets/images/search-images/jk2.jpg" class="book-img" >
-				<h5>Harry Potter and the Philosopher's stone</h5>
-				<p>P800</p>
-			</div>
-			<div>
-				<img src="assets/images/search-images/jk3.jpg" class="book-img" >
-				<h5>Harry Potter and the Philosopher's stone</h5>
-				<p>P800</p>
-			</div>
-			<div>
-				<img src="assets/images/search-images/jk4.jpg" class="book-img" >
-				<h5>Harry Potter and the Philosopher's stone</h5>
-				<p>P800</p>
+				<div>
+					<img src="assets/images/search-images/jk1.jpg" class="book-img" >
+					<h5>Harry Potter and the Philosopher's stone</h5>
+					<div>
+						<button class="sr-detail">Detail</button>
+						<button class="sr-buy">Buy</button>
+					</div>
+				</div>
+				<div>
+					<img src="assets/images/search-images/jk2.jpg" class="book-img" >
+					<h5>Harry Potter and the Philosopher's stone</h5>
+					<div>
+						<button class="sr-detail">Detail</button>
+						<button class="sr-buy">Buy</button>
+					</div>
+				</div>
+				<div>
+					<img src="assets/images/search-images/jk3.jpg" class="book-img" >
+					<h5>Harry Potter and the Philosopher's stone</h5>
+					<div>
+						<button class="sr-detail">Detail</button>
+						<button class="sr-buy">Buy</button>
+					</div>
+				</div>
+				<div>
+					<img src="assets/images/search-images/jk4.jpg" class="book-img" >
+					<h5>Harry Potter and the Philosopher's stone</h5>
+					<div>
+						<button class="sr-detail">Detail</button>
+						<button class="sr-buy">Buy</button>
+					</div>
+				</div>
+				<div>
+					<img src="assets/images/search-images/jk1.jpg" class="book-img" >
+					<h5>Harry Potter and the Philosopher's stone</h5>
+					<div>
+						<button class="sr-detail">Detail</button>
+						<button class="sr-buy">Buy</button>
+					</div>
+				</div>
+				<div>
+					<img src="assets/images/search-images/jk2.jpg" class="book-img" >
+					<h5>Harry Potter and the Philosopher's stone</h5>
+					<div>
+						<button class="sr-detail">Detail</button>
+						<button class="sr-buy">Buy</button>
+					</div>
+				</div>
+				<div>
+					<img src="assets/images/search-images/jk3.jpg" class="book-img" >
+					<h5>Harry Potter and the Philosopher's stone</h5>
+					<div>
+						<button class="sr-detail">Detail</button>
+						<button class="sr-buy">Buy</button>
+					</div>
+				</div>
+				<div>
+					<img src="assets/images/search-images/jk4.jpg" class="book-img" >
+					<h5>Harry Potter and the Philosopher's stone</h5>
+					<div>
+						<button class="sr-detail">Detail</button>
+						<button class="sr-buy">Buy</button>
+					</div>
 			</div>
 			
 		</div>
 	</section>
 
-	<section class="About-us">
-
-		<div class="aboutus-left">
+	<section class="Best-seller">
+		<div class="bs-caption">
+			<p>Most Popular</p>
+			<h2>Where The Crawdads Sing</h2>
+			<p>Delia Owens</p>
+			<p>Where the crawdads Sing is Number 1 Bestseller in New York for over 70 weeks. And now hitting bestseller lists of Europe and Autstralia.</p>
+		</div>
+		<div class="bs-cover">
+			<img src="assets/images/ft-book.png">
 			
 		</div>
-		<div class="aboutus-right">
-			
+		<div class="bs-delia">
+			<img src="assets/images/ft-bookauthor.jpg">
 		</div>
-		
 	</section>
 
 	<section class="Contact">
