@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	font-family: 'Varela Round', sans-serif;
 	scroll-behavior: smooth;
-	/*border: 1px solid black;	*/
+	/*border: 1px solid red;	*/
 }
 
 /*anding Page */
@@ -239,6 +239,7 @@ select{
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
+
 }
 
 .search-result > div > div{
@@ -300,10 +301,10 @@ select{
 /*Bestseller codes starts here*/
 .Best-seller {
 	height: 90vh;
+	width: 100%;
 	background-color: #005E7C;
 	display: flex;
-
-	
+	flex-direction: row;
 }
 
 .Best-seller > div {
@@ -471,6 +472,31 @@ select{
 
 }
 
+footer{
+	height: 25vh;
+	background-color: black;
+	color: white;
+	display: flex;
+
+}
+footer > .f-left,.f-right  {
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+}
+
+footer > .f-left > i{
+	margin: 5px;
+	padding: 5px;
+}
+
+footer > .f-right > div > i{
+	margin: 5px;
+
+}
+
 
 /*Responsiveness starts here*/
 
@@ -482,7 +508,7 @@ select{
 		box-sizing: border-box;
 	}
 
-/*Landing Page*/
+/*Start of Landing Page*/
 	header{
 		height: 10%;
 		width: 100%
@@ -515,7 +541,7 @@ select{
 		font-size: 30px;
 		text-align: center;
 	}
-
+/*End of Landing page*/
 /*Nav page*/
 	nav {
 		height: 50px;
@@ -551,5 +577,51 @@ select{
 		width: 20px;
 		visibility: visible;
 	}
+
+/*End of Nav bar*/
+/*Start of Shop*/
+	.search form{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.search > form > input,.search > form > select  {
+		width: 100px;
+		height: 25px;
+		font-size: 10px;
+		padding: 5px;
+	}
+	.search > form > button {
+		width: 100px;
+		height: 25px;
+		padding: 5px 5px; 
+		font-size: 10px;
+	}
+
+	.search-result {
+		width: 100%;
+		
+	}
+
+	.search-result > div  {
+		height: auto;
+		overflow: auto;
+	}
+
+/*End of Shop*/
+/*Bestseller codes starts here*/
+	.Bestseller{
+		height: auto;
+	}
+	.Bestseller > div {
+		width: 100%;
+		height:;
+		display:block;
+	}
+/*Bestseller ends here*/
+
 }
 /*ipad - min-width 376px*/
