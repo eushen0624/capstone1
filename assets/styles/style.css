@@ -472,6 +472,7 @@ select{
 
 }
 
+/*Footer codes starts here*/
 footer{
 	height: 25vh;
 	background-color: black;
@@ -490,11 +491,21 @@ footer > .f-left,.f-right  {
 footer > .f-left > i{
 	margin: 5px;
 	padding: 5px;
+	font-size: 15px;
+	
 }
 
 footer > .f-right > div > i{
 	margin: 5px;
 
+}
+.f-right h3{
+
+}
+.f-right p{
+	font-size:10px;
+	width: 500px;
+	margin-bottom: 25px;
 }
 
 
