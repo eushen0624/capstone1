@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- title -->
-	<title>BookMark</title>
+<title>BookMark</title>
+	
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 	<link rel="icon" type="image/png" href="assets/images/notebook.png">
 	
 	<!-- css link -->
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/meny.css">
+
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins|Varela+Round&display=swap" rel="stylesheet">
 
@@ -16,21 +20,39 @@
 	<!-- fontawesome -->
 	<script src="https://kit.fontawesome.com/5a588874b5.js" crossorigin="anonymous"></script>
 
+	 <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="Landing-main" id="Landing-main">
 		<header>
-			<div>
+			<div class="nav-brand">
 				<h1>BookMark</h1>
 				<p>Your favorite bookshop.</p>
 			</div>	
-			<img src="assets/images/menu2.png" class="">
+		 	<div class="hamburger">
+		 		<div class="menu-icons open">
+					<i class="icon ion-md-menu"></i>
+			 	</div>
+
+			 	<ul class="nav-list">
+			 		<div class="menu-icons close">
+			 			<i class="icon ion-md-close"></i>
+			 		</div>
+
+			 		<li class="nav-item"><a href="#Landing-main" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="#Shop" class="nav-link">Shop</a></li>
+					<li class="nav-item"><a href="#Best-seller" class="nav-link">Bestseller</a></li>
+					<li class="nav-item"><a href="#Reviews" class="nav-link">Reviews</a></li>
+					<li class="nav-item"><a href="#Contact" class="nav-link">Contact Us</a></li>
+			 	</ul>
+		 	</div>
 		</header>
 		<section class="Landing-page">
 			<div>
 				<h4>Looking for new reads?</h4>
 				<h1>Let's awaken the bookworm in you. </h1>
-				<button type="button" value="#nav">View more</button>
+				<a href="#Shop" class="landing-btn">View more</a>
 			</div>
 		</section>
 	</div>
@@ -46,7 +68,7 @@
 			<li><a href="#Reviews">Reviews</a></li>
 			<li><a href="#Contact">Contact Us</a></li>
 		</ul>
-		<img src="assets/images/menu2.png" class="">
+
 	</nav>
 
 	<section class="Shop" id="Shop">	
@@ -136,27 +158,24 @@
 
 	<section class="Best-seller" id="Best-seller">
 		<div class="bs-caption">
-			<p>Bestseller</p>
+			<p class="section-title">Bestseller</p>
 			<h2>Where The Crawdads Sing</h2>
 			<p>By Delia Owens</p>
 			<p>Where the crawdads Sing is Number 1 Bestseller in New York for over 70 weeks. And now hitting bestseller lists of Europe and Autstralia.</p>
 		</div>
-		<div class="bs-cover">
-			<img src="assets/images/ft-book.png">
-			
-		</div>
-		<div class="bs-delia">
-			<img src="assets/images/ft-bookauthor.jpg">
-		</div>
+		<img src="assets/images/ft-book.png" class="bs-cover">
+		<img src="assets/images/ft-bookauthor.jpg" class="bs-delia">
+
 	</section>
 
 	<section class="Reviews" id="Reviews">
+
 		<div class="r-title">
 			<h1>Reviews</h1>
-			<p>Here some inspiring reviews from our beloved customers</p>
+			<p>Here are some inspiring reviews from our beloved customers</p>
 		</div>
 		<div class="r-people">
-			<div>
+			<div class="review-grid-item jessica">
 				<div class="rp-sect1">
 					<img src="assets/images/jessica.jpg">
 					<h3>Jessica Jones</h3>
@@ -165,7 +184,7 @@
 		
 			</div>
 
-			<div>
+			<div class="review-grid-item brad">
 				<div class="rp-sect1">
 					<img src="assets/images/brad.jpg">
 					<h3>Brad Cooper</h3>
@@ -173,7 +192,7 @@
 
 					<p>Thanks to Bookmark I found the best book to give my girlfriend for her birthday!</p>
 			</div>
-			<div>
+			<div class="review-grid-item vanessa" >
 				<div class="rp-sect1">
 					<img src="assets/images/vanessa.jpg">
 					<h3>Vanessa Smith</h3>
@@ -194,15 +213,21 @@
 				<button>Send</button>
 			</form>
 		</div>
-		<div class="c-image">
-			<img src="assets/images/mail.png">
-		</div>
+		
+		<img src="assets/images/mail.png" class="c-image">
+		
 	</section>
 	<footer>
 		<div class="f-left">
-			<i class="fas fa-map-marker-alt">399 Sen. Gil J. Puyat Ave, Makati, 1200 Metro Manila</i>
-			<i class="fas fa-phone-alt">+639565381405</i>
-			<i class="fas fa-envelope">eushen.6@gmail.com</i>
+			<!-- <i class="fas fa-map-marker-alt"> -->
+				<p>399 Sen. Gil J. Puyat Ave, Makati, 1200 Metro Manila</p>
+			<!-- </i> -->
+			<!-- <i class="fas fa-phone-alt"> -->
+				<p>+639565381405</p>
+			<!-- </i> -->
+			<!-- <i class="fas fa-envelope"> -->
+				<p>eushen.6@gmail.com</p>
+			<!-- </i> -->
 		</div>
 		<div class="f-right">
 			<h3>About Us</h3>
@@ -214,7 +239,12 @@
 				<i class="fab fa-twitter"></i>
 			</div>
 		</div>
+
+
 	</footer>
+
+<script type="text/javascript" src="assets/scripts/script.js"></script>
+
 </body>
 </body>
 </html>
